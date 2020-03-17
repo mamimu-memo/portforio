@@ -1,0 +1,287 @@
+/* CSS Document */
+
+*{
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+.wf-hannari { 
+  font-family: "Hannari"; 
+}
+
+.wf-tit { 
+  font-family: 'Pompiere', cursive;
+}
+/*header*/
+
+header{
+  height: 100vh;
+}
+
+/*header::before{
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(../img/header_img.jpg) no-repeat;
+  background-size: cover;
+  z-index: -1;
+}*/
+
+.img-anim{
+    position: relative;
+    display: block;
+    width: 350px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.img-eye{
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 82px;
+    height: 50px;
+    transform-origin: top;
+    overflow-y: hidden;
+}
+
+.img-eye img{
+    width: 40px;
+    height: 30px;
+    margin: 10px auto 0;
+    overflow: hidden;
+    animation: eye_anim 5s ease 0s infinite alternate;
+}
+
+
+.img-eye.right{
+    right: 19%;
+}
+
+.img-eye.right::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 81px;
+    height: 31px;
+    background: url(../img/eyelid_r.png);
+}
+
+.img-eye.left{
+    left: 19%;
+}
+
+.img-eye.left::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 81px;
+    height: 28px;
+    background: url(../img/eyelid_l.png);    
+}
+
+.img-eye::before{
+    animation: eyelid_anim 5s ease 0s infinite alternate;    
+}
+
+.img-hair{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    animation: hair_anim 10s ease 0s infinite alternate;    
+    transform-origin: top;
+}
+
+.img-hair.right{
+    right: 5%;
+}
+
+.img-hair.left{
+    left: 5%;
+}
+
+    @keyframes eye_anim{
+      0%{
+        transform: translateY(0);          
+        height:30px;
+      }
+      30%{
+        transform: translateY(0);          
+        height:30px;
+      }
+      50%{
+        transform: translateY(10px);          
+        height: 10px;
+      }
+      75%{
+        transform: translateY(0);          
+        height: 30px;
+      }
+      100%{
+        transform: translateY(10px);                    
+        height: 10px;
+      }
+    }
+    @keyframes eyelid_anim{
+      0%{
+        transform: translateY(0);
+      }
+      30%{
+        transform: translateY(0);
+      }
+      50%{
+        transform: translateY(10px);        
+      }
+      75%{
+        transform: translateY(0px);        
+      }
+      100%{
+        transform: translateY(10px);        
+      }
+    }
+    @keyframes hair_anim{
+      0%{
+        transform: rotate(0);
+      }
+      50%{
+        transform: rotate(20deg);        
+      }
+      80%{
+        transform: rotate(-10deg);        
+      }
+      100%{
+        transform: translateY(0);        
+      }
+    }
+
+
+.main_menu{
+  display: inline-block;
+  /*background: rgba(255,255,255,.8);*/
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 2em;
+}
+
+.main_menu h1{
+  margin: 1em 0;
+  font-size: 2em;
+}
+
+.main_menu h1 span{
+    display: block;
+    font-size: .5em;
+}
+
+.main_menu ul{
+  margin-top: 3em;
+}
+
+.main_menu ul li{
+  display: inline-block;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  margin:0 1em;
+}
+
+.main_menu ul li a{
+  color: #666;
+  text-decoration: none;
+}
+
+
+/*main*/
+
+main {
+  position: relative;
+}
+
+main p{
+  line-height: 1.8em;
+}
+
+
+main div{
+  background:rgba(255,255,255,.8);  
+  width: 90%;
+  margin: 20px auto;
+  padding: 1em;
+}
+
+main h2{
+  display: block;
+  text-align: center;
+  font-weight: normal;
+  color: #666;
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+ul.skill{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.skill li{
+    border: 1px solid #aaa;
+    padding: 10px;
+    border-radius: 50px;
+    color: #aaa;
+    margin:10px;
+}
+
+#menu2 ul{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns:repeat(auto-fit,200px);
+  grid-column-gap: .5%;
+  padding: 2em 0;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  border-bottom: 1px #ccc solid;
+}
+
+#menu2 ul:last-child{
+  border: none;
+}
+
+#menu2 ul li img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+footer{
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background: rgba(0,0,0,.5);
+}
+
+footer a{
+  color: #fff;
+  line-height: 60px;
+  text-decoration: none;
+}
