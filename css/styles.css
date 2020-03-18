@@ -8,6 +8,10 @@ li{
   list-style: none;
 }
 
+html{
+  scroll-behavior: smooth;    
+}
+
 body{
   width: 100%;
   height: 100%;
@@ -237,6 +241,18 @@ main h2{
   margin-top: 1em;
 }
 
+#menu1 img{
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+#menu1 p{
+    text-align: center;
+}
+
 ul.skill{
     display: flex;
     flex-wrap: wrap;
@@ -259,7 +275,6 @@ ul.skill li{
   width: 90%;
   margin: auto;
   justify-content: center;
-  border-bottom: 1px #ccc solid;
 }
 
 #menu2 ul:last-child{
@@ -273,6 +288,76 @@ ul.skill li{
   object-position: center;
 }
 
+h3{
+    position: relative;
+    display: inline-block;
+    padding: 0 55px;
+    margin: 2em auto 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight:normal;
+}
+
+h3::before,h3::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: black;
+}
+
+h3:before {
+  left:0;
+}
+
+h3:after {
+  right: 0;
+}
+
+
+.caption{
+    margin-top: 0px;
+  border-bottom: 1px #ccc solid;    
+}
+
+.caption p{
+    display: inline-block;
+    margin: .5em;
+}
+
+.caption p::before{
+    content: "＊";
+    color: #ccc;
+    margin-right: .3em;
+}
+
+#menu3 {
+    text-align: center;
+}
+
+#menu3 a{
+    display: inline-block;
+    width: 30%;
+    min-width: 150px;
+    background: #333;
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: #aaa;
+    margin:10px;   
+    color: #fff;
+    text-decoration: none;
+    transition: .3s all;
+}
+
+#menu3 a:hover{
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+    padding: 9px 15px;
+}
+
 footer{
   width: 100%;
   height: 60px;
@@ -281,6 +366,7 @@ footer{
 }
 
 footer a{
+    display: block;
   color: #fff;
   line-height: 60px;
   text-decoration: none;
