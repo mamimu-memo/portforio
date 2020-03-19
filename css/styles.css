@@ -103,6 +103,7 @@ header{
 
 .img-hair{
     position: absolute;
+    width: 62px;
     bottom: 0;
     z-index: -1;
     animation: hair_anim 10s ease 0s infinite alternate;    
@@ -286,6 +287,10 @@ ul.skill li{
   height: 200px;
   object-fit: cover;
   object-position: center;
+}
+
+#menu2 ul li a:hover{
+    
 }
 
 h3{
