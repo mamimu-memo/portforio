@@ -13,8 +13,9 @@ html{
 }
 
 body{
-  width: 100%;
-  height: 100%;
+width: 100%;
+height: 100%;
+scroll-snap-type: y mandatory;        
 }
 
 .wf-hannari { 
@@ -27,6 +28,7 @@ body{
 /*header*/
 
 header{
+    scroll-snap-align: center;            
   height: 100vh;
 }
 
@@ -218,6 +220,7 @@ header{
 /*main*/
 
 main {
+    scroll-snap-align: center;        
   position: relative;
 }
 
@@ -241,6 +244,7 @@ main h2{
   font-size: 2em;
   margin-top: 1em;
 }
+
 
 #menu1 img{
     display: block;
@@ -287,10 +291,19 @@ ul.skill li{
   height: 200px;
   object-fit: cover;
   object-position: center;
+    transition: .3s all;
 }
 
-#menu2 ul li a:hover{
-    
+#menu2 ul li a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#menu2 ul li a:hover img{
+    transform: scale(1.5);
+    background: rgba(10,10,10,0);    
 }
 
 h3{
