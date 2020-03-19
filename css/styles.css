@@ -229,7 +229,7 @@ main div{
   background:rgba(255,255,255,.8);  
   width: 90%;
   margin: 20px auto;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 main h2{
@@ -370,4 +370,17 @@ footer a{
   color: #fff;
   line-height: 60px;
   text-decoration: none;
+}
+@media only screen and (max-width: 640px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    #menu2 ul{
+  grid-template-columns:repeat(auto-fit,150px);
+    }
+    
+    #menu2 ul li img {
+        width: 100%;
+    }
 }
