@@ -267,7 +267,7 @@ ul.skill li{
     border: 1px solid #aaa;
     padding: 10px;
     border-radius: 50px;
-    color: #aaa;
+    color: #666;
     margin:10px;
 }
 
@@ -291,7 +291,7 @@ ul.skill li{
   height: 200px;
   object-fit: cover;
   object-position: center;
-    transition: .3s all;
+    transition: .8s ease-in all;
 }
 
 #menu2 ul li a{
@@ -302,7 +302,7 @@ ul.skill li{
 
 
 #menu2 ul li a:hover img{
-    transform: scale(1.5);
+    transform: rotateY(360deg);
     background: rgba(10,10,10,0);    
 }
 
