@@ -264,12 +264,61 @@ ul.skill{
 }
 
 ul.skill li{
+    position: relative;    
     border: 1px solid #aaa;
     padding: 10px;
     border-radius: 50px;
     color: #666;
     margin:10px;
+    overflow: hidden;
 }
+
+ul.skill li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+ul.skill li.ps::after{
+    width: 90%;
+    background-color: #6495ed;
+}
+
+ul.skill li.ai::after{
+    width: 90%;
+    background-color: #ff7f50;
+}
+
+ul.skill li.dw::after{
+    width: 80%;
+    background-color: #3cb371;
+}
+
+ul.skill li.ht::after{
+    width: 80%;
+    background-color: #aaa;
+}
+
+ul.skill li.cs::after{
+    width: 70%;
+    background-color: #aaa;
+}
+
+ul.skill li.js::after{
+    width: 60%;
+    background-color: #aaa;
+}
+
+ul.skill li.wp::after{
+    width: 60%;
+    background-color: #aaa;
+}
+
+
+
 
 #menu2 ul{
   display: grid;
@@ -291,7 +340,7 @@ ul.skill li{
   height: 200px;
   object-fit: cover;
   object-position: center;
-    transition: .8s ease-in all;
+    transition: .5s ease-in all;
 }
 
 #menu2 ul li a{
@@ -301,9 +350,17 @@ ul.skill li{
 }
 
 
-#menu2 ul li a:hover img{
+#menu2 ul.cat1 li a:hover img{
     transform: rotateY(360deg);
     background: rgba(10,10,10,0);    
+}
+
+#menu2 ul.cat2 li a:hover img{
+    opacity: .5;
+}
+
+#menu2 ul.cat3 li a:hover img{
+    border-radius: 200px;
 }
 
 h3{
