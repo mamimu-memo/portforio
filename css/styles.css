@@ -299,22 +299,22 @@ ul.skill li.dw::after{
 
 ul.skill li.ht::after{
     width: 80%;
-    background-color: #aaa;
+    background-color: #fffacd;
 }
 
 ul.skill li.cs::after{
     width: 70%;
-    background-color: #aaa;
+    background-color: #eebbcb;
 }
 
 ul.skill li.js::after{
     width: 60%;
-    background-color: #aaa;
+    background-color: #2ca9e1;
 }
 
 ul.skill li.wp::after{
     width: 60%;
-    background-color: #aaa;
+    background-color: #7ebeab;
 }
 
 
