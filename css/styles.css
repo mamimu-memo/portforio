@@ -323,6 +323,7 @@ ul.skill li.wp::after{
   display: grid;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+    -ms-grid-rows: auto 200px auto 200px auto 200px auto;
   grid-template-columns:repeat(auto-fit,200px);
   grid-column-gap: .5%;
   padding: 2em 0;
