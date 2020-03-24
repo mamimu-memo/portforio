@@ -320,6 +320,7 @@ ul.skill li.wp::after{
 
 
 #menu2 ul{
+  display: -ms-grid;
   display: grid;
   grid-template-rows: auto;
   -ms-grid-rows: auto;
@@ -329,7 +330,9 @@ ul.skill li.wp::after{
   padding: 2em 0;
   width: 90%;
   margin: auto;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #menu2 ul:last-child{
